@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.unionmutualproject.Dashboard">
+      <class name="com.unionmutualproject.CreateQuote">
         <methods>
-          <include name="DashboardPage"/>
+          <include name="createQuote"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.unionmutualproject.Dashboard -->
+      </class> <!-- com.unionmutualproject.CreateQuote -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
