@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.MobileBy;
+import io.appium.java_client.TouchAction;
 
 public class CreateQuote extends Login {
 	
@@ -25,6 +26,7 @@ public class CreateQuote extends Login {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//android.widget.Button[@content-desc=\"Open navigation menu\"]")));
 		element.click();
+		
 
 		//android.widget.Button[@content-desc="Open navigation menu"]
 		//ele.click();
