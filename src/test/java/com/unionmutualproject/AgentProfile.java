@@ -11,7 +11,8 @@ public class AgentProfile extends Dashboard {
 	{
 		Thread.sleep(2000);
 		
-		driver.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]")).click();
+		WebElement agenProfile = driver.findElement(By.xpath("//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.widget.Button[2]"));
+		agenProfile.click();
 		Thread.sleep(2000);
 		WebElement e1 = driver.findElement(By.xpath("//android.widget.EditText[@text=\"(603) 809-9365\"]"));
 		Thread.sleep(2000);
@@ -20,6 +21,7 @@ public class AgentProfile extends Dashboard {
 	
 		Thread.sleep(2000);
 		e1.sendKeys("1111111111");
+		System.out.println("Agent Profile Updtaed Successfully");
 		//driver.navigate().back();
 	}
 

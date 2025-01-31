@@ -1,51 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-24T16:00:45 IST" name="Default suite" finished-at="2025-01-24T16:01:25 IST" duration-ms="40119">
+  <suite started-at="2025-01-31T18:24:51 IST" name="Default suite" finished-at="2025-01-31T18:25:14 IST" duration-ms="22407">
     <groups>
     </groups>
-    <test started-at="2025-01-24T16:00:45 IST" name="Default test" finished-at="2025-01-24T16:01:25 IST" duration-ms="40119">
+    <test started-at="2025-01-31T18:24:51 IST" name="Default test" finished-at="2025-01-31T18:25:14 IST" duration-ms="22407">
       <class name="com.unionmutualproject.CreateQuote">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.unionmutualproject.CreateQuote@5bf0d49]" started-at="2025-01-24T16:00:45 IST" name="setup" finished-at="2025-01-24T16:00:55 IST" duration-ms="10208" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.unionmutualproject.CreateQuote@6c6cb480]" started-at="2025-01-31T18:24:40 IST" name="setup" finished-at="2025-01-31T18:24:51 IST" duration-ms="11518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createQuote()[pri:0, instance:com.unionmutualproject.CreateQuote@5bf0d49]" started-at="2025-01-24T16:00:55 IST" name="createQuote" finished-at="2025-01-24T16:00:57 IST" duration-ms="2118" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="createQuote()[pri:0, instance:com.unionmutualproject.CreateQuote@6c6cb480]" started-at="2025-01-31T18:24:51 IST" name="createQuote" finished-at="2025-01-31T18:25:01 IST" duration-ms="10100" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.Button[@content-desc="Open navigation menu"] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [75282d1b-29d4-4d80-9b00-d429dafdd422, findElement {using=-android uiautomator, value=new UiSelector().description("Open navigation menu")}]
-Capabilities {appium:appActivity: com.odysseynext.unionmutual..., appium:appPackage: com.odysseynext.unionmutual, appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.odysseynext.unionmutual..., appPackage: com.odysseynext.unionmutual, automationName: uiAutomator2, deviceName: Test Device, platformName: ANDROID, platformversion: 14, uuid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Nothing, appium:deviceModel: A063, appium:deviceName: P12278000659, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: P12278000659, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:platformversion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 75282d1b-29d4-4d80-9b00-d429dafdd422]]>
+Capabilities {appium:appActivity: com.odysseynext.unionmutual..., appium:appPackage: com.odysseynext.unionmutual, appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.odysseynext.unionmutual..., appPackage: com.odysseynext.unionmutual, automationName: uiAutomator2, deviceName: Test Device, platformName: ANDROID, platformversion: 14, uuid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Nothing, appium:deviceModel: A063, appium:deviceName: 192.168.0.100:5555, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 192.168.0.100:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:platformversion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6221e1c6-f01a-4fef-a5f5-f87a9a1b268e]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //android.widget.Button[@content-desc="Open navigation menu"] (tried for 10 second(s) with 500 milliseconds interval)
 Build info: version: '4.13.0', revision: 'ba948ece5b*'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
 Driver info: io.appium.java_client.android.AndroidDriver
-Command: [75282d1b-29d4-4d80-9b00-d429dafdd422, findElement {using=-android uiautomator, value=new UiSelector().description("Open navigation menu")}]
-Capabilities {appium:appActivity: com.odysseynext.unionmutual..., appium:appPackage: com.odysseynext.unionmutual, appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.odysseynext.unionmutual..., appPackage: com.odysseynext.unionmutual, automationName: uiAutomator2, deviceName: Test Device, platformName: ANDROID, platformversion: 14, uuid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Nothing, appium:deviceModel: A063, appium:deviceName: P12278000659, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: P12278000659, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:platformversion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 75282d1b-29d4-4d80-9b00-d429dafdd422
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at com.unionmutualproject.CreateQuote.createQuote(CreateQuote.java:23)
+Capabilities {appium:appActivity: com.odysseynext.unionmutual..., appium:appPackage: com.odysseynext.unionmutual, appium:automationName: uiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.odysseynext.unionmutual..., appPackage: com.odysseynext.unionmutual, automationName: uiAutomator2, deviceName: Test Device, platformName: ANDROID, platformversion: 14, uuid: emulator-5554}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Nothing, appium:deviceModel: A063, appium:deviceName: 192.168.0.100:5555, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 192.168.0.100:5555, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:platformversion: 14, appium:statBarHeight: 136, appium:takesScreenshot: true, appium:uuid: emulator-5554, appium:viewportRect: {height: 2264, left: 0, top: 136, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 6221e1c6-f01a-4fef-a5f5-f87a9a1b268e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.unionmutualproject.CreateQuote.createQuote(CreateQuote.java:26)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -74,22 +59,14 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createQuote -->
-        <test-method signature="login()[pri:1, instance:com.unionmutualproject.CreateQuote@5bf0d49]" started-at="2025-01-24T16:00:57 IST" name="login" finished-at="2025-01-24T16:01:14 IST" duration-ms="16801" status="PASS">
+        <test-method signature="login()[pri:1, instance:com.unionmutualproject.CreateQuote@6c6cb480]" started-at="2025-01-31T18:25:01 IST" name="login" finished-at="2025-01-31T18:25:14 IST" duration-ms="12276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="DashboardPage()[pri:2, instance:com.unionmutualproject.CreateQuote@5bf0d49]" started-at="2025-01-24T16:01:14 IST" name="DashboardPage" finished-at="2025-01-24T16:01:23 IST" duration-ms="8828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DashboardPage -->
-        <test-method signature="Transaction()[pri:3, instance:com.unionmutualproject.CreateQuote@5bf0d49]" started-at="2025-01-24T16:01:23 IST" name="Transaction" finished-at="2025-01-24T16:01:25 IST" duration-ms="2137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Transaction -->
       </class> <!-- com.unionmutualproject.CreateQuote -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
